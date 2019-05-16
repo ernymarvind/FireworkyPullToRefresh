@@ -42,7 +42,7 @@ public class Configuration {
      * Use this method to set rocket drawable
      * @param rocketDrawable drawable of rocket
      */
-    void setRocket(Drawable rocketDrawable) {
+    public void setRocket(Drawable rocketDrawable) {
         mRocketDrawable = rocketDrawable;
     }
 
@@ -50,7 +50,7 @@ public class Configuration {
      * Use this method to set rocket bitmap
      * @param rocketBitmap bitmap of rocket
      */
-    void setRocket(Bitmap rocketBitmap) {
+    public void setRocket(Bitmap rocketBitmap) {
         setRocket(new BitmapDrawable(mContext.getResources(), rocketBitmap));
     }
 
@@ -58,11 +58,11 @@ public class Configuration {
      * Use this method to set rocket drawable from resources
      * @param fireworkDrawableRes drawable resource id of rocket
      */
-    void setRocket(@DrawableRes int fireworkDrawableRes) {
+    public void setRocket(@DrawableRes int fireworkDrawableRes) {
         mRocketDrawable = ContextCompat.getDrawable(mContext, fireworkDrawableRes);
     }
 
-    Drawable getRocketDrawable() {
+    public Drawable getRocketDrawable() {
         return mRocketDrawable;
     }
 
